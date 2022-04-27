@@ -1,11 +1,11 @@
-FROM node:15.7-alpine
+FROM node:16-alpine3.15
 
 ENV NODE_ENV=production
 
 RUN addgroup -g 1017 -S appgroup \
   && adduser -u 1017 -S appuser -G appgroup \
   && apk update \
-  && apk add build-base python
+  && apk add --update python3 py3-pip
 
 WORKDIR /app
 

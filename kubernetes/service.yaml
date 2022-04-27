@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: moj-prototype
+  namespace: moj-prototype
+spec:
+  selector:
+    app: moj-prototype-app
+  ports:
+    - name: http
+      port: 3000
+      targetPort: http
