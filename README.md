@@ -4,7 +4,7 @@
 
 Create a [Gov.UK Prototype Kit] website, hosted on the [MoJ Cloud Platform].
 
-In addition to the protype kit v9.11.2, this repository contains:
+In addition to the protype kit v12.0.3, this repository contains:
 
 ### Files to build a docker image to run the prototype site
 
