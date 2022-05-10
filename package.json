@@ -63,12 +63,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ministryofjustice/demo-updated-moj-template-project.git"
+    "url": ""
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ministryofjustice/demo-updated-moj-template-project/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/ministryofjustice/demo-updated-moj-template-project#readme"
+  "homepage": ""
 }
