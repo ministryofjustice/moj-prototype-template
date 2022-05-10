@@ -1,32 +1,30 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: moj-prototype-app
-  namespace: ${KUBE_NAMESPACE}
+  name: ${PROTOTYPE_NAME}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: moj-prototype-app
+      app: ${PROTOTYPE_NAME}
   template:
     metadata:
       labels:
-        app: moj-prototype-app
+        app: ${PROTOTYPE_NAME}
     spec:
       containers:
-        - name: moj-prototype-app
-          image: ${ECR_URL}:${IMAGE_TAG}
-          env:
-            - name: USERNAME
-                valueFrom:
-                  secretKeyRef:
-                    name: basic-auth
-                    key: username
-            - name: PASSWORD
-                valueFrom:
-                  secretKeyRef:
-                    name: basic-auth
-                    key: password
-          ports:
-            - name: http
-              containerPort: 3000
+      - name: nginx
+        image: 754256621582.dkr.ecr.eu-west-2.amazonaws.com/${ECR_NAME}:${IMAGE_TAG}
+        env:
+          - name: USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: basic-auth
+                key: username
+          - name: PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: basic-auth
+                key: password
+        ports:
+        - containerPort: 3000
