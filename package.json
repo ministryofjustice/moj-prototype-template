@@ -53,7 +53,7 @@
     "sass": "^1.52.2",
     "standard": "^17.0.0",
     "start-server-and-test": "^1.14.0",
-    "supertest": "^6.1.6",
+    "supertest": "^6.2.3",
     "sync-request": "^6.1.0",
     "universal-analytics": "^0.5.3",
     "uuid": "^8.3.2",
@@ -66,7 +66,7 @@
     "jest": "^27.3.1",
     "standard": "^17.0.0",
     "start-server-and-test": "^1.14.0",
-    "supertest": "^6.1.6",
+    "supertest": "^6.2.3",
     "wait-on": "^6.0.1"
   },
   "standard": {
